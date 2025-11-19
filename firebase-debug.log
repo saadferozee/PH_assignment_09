@@ -1,0 +1,51 @@
+[debug] [2025-11-18T08:01:29.937Z] ----------------------------------------------------------------------
+[debug] [2025-11-18T08:01:29.941Z] Command:       /usr/local/bin/node /usr/local/bin/firebase login
+[debug] [2025-11-18T08:01:29.942Z] CLI Version:   14.25.0
+[debug] [2025-11-18T08:01:29.942Z] Platform:      darwin
+[debug] [2025-11-18T08:01:29.942Z] Node Version:  v22.17.1
+[debug] [2025-11-18T08:01:29.942Z] Time:          Tue Nov 18 2025 14:01:29 GMT+0600 (Bangladesh Standard Time)
+[debug] [2025-11-18T08:01:29.943Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-11-18T08:01:29.945Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] i  The Firebase CLI’s MCP server feature can optionally make use of Gemini in Firebase. Learn more about Gemini in Firebase and how it uses your data: https://firebase.google.com/docs/gemini-in-firebase#how-gemini-in-firebase-uses-your-data 
+[debug] [2025-11-18T08:01:30.890Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-11-18T08:01:30.891Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you. 
+[info] 
+[info] i  To change your preferences at any time, run `firebase logout` and `firebase login` again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=220406635&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-11-18T08:02:28.790Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2025-11-18T08:02:28.791Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"56aa88bb-8dc1-48ba-bd31-6070d3f30ba8"}
+[debug] [2025-11-18T08:02:29.457Z] <<< [apiv2][status] POST https://auth.firebase.tools/attest 200
+[debug] [2025-11-18T08:02:29.457Z] <<< [apiv2][body] POST https://auth.firebase.tools/attest {"token":"K3Csfzz4tY7XweBuPb2FidmZu_xTK-LqDkDmvc80VuE"}
+[info] 
+[info] To sign in to the Firebase CLI:
+[info] 
+[info] 1. Take note of your session ID:
+[info] 
+[info]    56AA8
+[info] 
+[info] 2. Visit the URL below on any device and follow the instructions to get your code:
+[info] 
+[info]    https://auth.firebase.tools/login?code_challenge=OAV4h8soAEtx_j2BMt9h1WZiNuZ0qPJUC-jKIX8f__4&session=56aa88bb-8dc1-48ba-bd31-6070d3f30ba8&attest=K3Csfzz4tY7XweBuPb2FidmZu_xTK-LqDkDmvc80VuE
+[info] 
+[info] 3. Paste or enter the authorization code below once you have it:
+[info] 
+[debug] [2025-11-18T08:02:39.965Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (/usr/local/lib/node_modules/firebase-tools/node_modules/@inquirer/core/dist/commonjs/lib/create-prompt.js:101:37)
+    at Interface.emit (node:events:518:28)
+    at Interface.emit (node:domain:489:12)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1132:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:271:20)
+    at ReadStream.emit (node:events:530:35)
+    at ReadStream.emit (node:domain:489:12)
+    at emitKeys (node:internal/readline/utils:370:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+[error] 
+[error] Error: An unexpected error has occurred.
